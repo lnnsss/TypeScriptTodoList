@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/*----основа---------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+body {
+    background: rgb(2,0,36);
+}
+.wrapper {
+    padding: 100px 0 0 0;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/*----todoList---------------------------------*/
+
+input {
+    outline: none;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 30px; 
+}
+input[type=text] {
+    width: 396px;
+    padding: 10px; 
+}
+button:hover {
+    filter: brightness(120%);
+}
+button:active {
+    filter: brightness(90%);
+}

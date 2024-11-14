@@ -1,0 +1,80 @@
+.todoList {
+    margin: 0 auto;
+    max-width: 460px;
+    display: block;
+    margin: 0 auto 40px;
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 10px 0 #9af0ff;
+    box-shadow: 0 2px 10px 0 #9af0ff;
+}
+.createNewTodo {
+    text-align: center;
+}
+.todo {
+    padding-left: 0;
+}
+.todo li {
+    padding: 1em;
+    list-style-type: none;
+}
+.todo li:not(:last-child) {
+    border-bottom: 1px solid rgba(70,88,173,1);
+}
+.add {
+    margin-top: 20px;
+    width: 300px;
+    padding: 10px;
+    cursor: pointer; 
+    background: linear-gradient(148deg, rgba(2,0,36,1) 0%, rgba(200,118,182,1) 0%, rgba(70,88,173,1) 61%, rgba(170,208,215,1) 100%);
+    border-radius: 20px;
+    font-weight: bold;
+    color: #eeeeee;
+    font-size: 16px;
+    transition: 0.25s;
+}
+.todoElement {
+    display: flex;
+    align-items: center;
+}
+.todoInput {
+    opacity: 0;
+    position: absolute;
+}
+.todoInput, .todoLabel, .delTodo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer; 
+}
+.todoInput + .todoLabel:before {
+    content: '';
+    background: inherit;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center; 
+}
+.todoInput:checked + .todoLabel:before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 5px;
+    border: solid blue;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-radius: 0;
+    margin: 0 15px 5px 5px; 
+}
+.delTodo {
+    margin-left: auto;
+    font-weight: 600;
+}
